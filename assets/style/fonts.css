@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'BPG DejaVu Sans';
+    src: url('../font/BPGDejaVuSans.woff2') format('woff2'),
+        url('../font/BPGDejaVuSans.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+ 
+
+@font-face {
+    font-family: 'BPG DejaVu Sans';
+    src: url('../font/BPGDejaVuSans-Bold.woff2') format('woff2'),
+        url('../font/BPGDejaVuSans-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG Nino Mtavruli';
+    src: url('../font/BPGNinoMtavruli.woff2') format('woff2'),
+        url('../font/BPGNinoMtavruli.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'BPG Nino Mtavruli';
+    src: url('../font/BPGNinoMtavruli-Bold.woff2') format('woff2'),
+        url('../font/BPGNinoMtavruli-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+ 

@@ -8,13 +8,17 @@
     --lang-font: 18px;
     --banner-height: 454px;
     --title1: 26px;
+    --title2: 22px;
     --title3: 20px;
+    --text1: 18px;
     --text2: 16px;
+    --time-font: 18px;
     --padding: 100px 0;
     --padding-b: 100px;
     --padding-t: 100px;
     --see-all: 18px;
     --details-font: 16px;
+    --create-font: 16px;
 }
 .padding{
     padding: var(--padding);
@@ -56,8 +60,9 @@
     font-weight: bold;
     line-height: 32px;
     color: #F45228;
-    margin-top: 15px;
+    margin-top: 20px;
     transition: 0.3s;
+    font-family: 'BPG Nino Mtavruli';
 }
 .r-header{
     display: flex;
@@ -75,6 +80,7 @@
     color: #232962;
     font-weight: bold;
     font-size: var(--lang-font);
+    font-family: 'BPG DejaVu Sans';
 }
 .r-t-h form{
     display: flex;
@@ -89,6 +95,7 @@
     margin-right: 10px;
     background-color: #F5F5F5;
     padding-left: 15px;
+    font-family: 'BPG DejaVu Sans';
 }
 .r-t-h form button{
     background-color: transparent;
@@ -112,6 +119,8 @@
     color: #393939;
     font-size: 14px;
     transition: 0.3s;
+    font-family: 'BPG DejaVu Sans';
+    font-style: normal;
 }
 .r-b-h a:hover{
     color: #232962;
@@ -142,6 +151,7 @@
     font-weight: bold;
     transition: 0.3s;
     display: block;
+    font-family: 'BPG Nino Mtavruli';
 }
 .contact-link{
     font-size: var(--nav-links-font);
@@ -151,6 +161,7 @@
     background-color: #F45228;
     transition: 0.3s;
     border-top-right-radius: 4px;
+    font-family: 'BPG Nino Mtavruli';
 }
 .nav-links ul li a:hover{
     background-color: #F45228;
@@ -201,12 +212,14 @@
     color: #FFFFFF;
     line-height: 32px;
     margin-bottom: 15px;
+    font-family: 'BPG Nino Mtavruli';
 }
 .slider-text .text{
     color: #FFFFFF;
     line-height: 26px;
     max-height: 58px;
     overflow: hidden;
+    font-family: 'BPG DejaVu Sans';
 }
 /* BAnner */
 .cit-title-box{
@@ -225,6 +238,7 @@
     width: fit-content;
     position: relative;
     transition: 0.3s;
+    font-family: 'BPG Nino Mtavruli';
 }
 .cit-title-box h1::after{
     position: absolute;
@@ -241,6 +255,7 @@
     color: #4B4B4B;
     line-height: 26px;
     transition: 0.3s;
+    font-family: 'BPG DejaVu Sans';
 }
 .see-all:hover{
     color: #232962;
@@ -271,6 +286,7 @@
     overflow: hidden;
     color: #232962;
     margin-top: 27px;
+    font-family: 'BPG Nino Mtavruli';
 }
 .cit-item:hover{
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -294,7 +310,7 @@
 .banner-2 .text-box{
     position: absolute;
     top: 0;
-    left: 50%;
+    left: 52.8%;
     transform: translateX(-50%);
     height: 100%;
     background: rgba(35, 41, 98, 0.8);
@@ -310,6 +326,7 @@
     font-weight: bold;
     margin-bottom: 34px;
     text-transform: capitalize;
+    font-family: 'BPG Nino Mtavruli';
 }
 .details-link{
     font-size: var(--details-font);
@@ -318,6 +335,7 @@
     border: 1px solid #fff;
     color: #fff;
     transition: 0.3s;
+    font-family: 'BPG DejaVu Sans';
 }
 .details-link:hover{
     background-color: #FFFFFF;
@@ -366,7 +384,305 @@
     max-height: 77px;
     overflow: hidden;
     text-align: center;
+    font-family: 'BPG DejaVu Sans';
 }
 .service-item a:hover{
     color: #232962;
 }
+
+.news-section{
+    width: 100%;
+    background: rgba(246, 246, 246, 0.5);
+}
+
+.news-title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 65px;
+}
+.news-title h2{
+    font-size: var(--title1);
+    line-height: 36px;
+    color: #232962;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition: 0.3s;
+    font-family: 'BPG Nino Mtavruli';
+}
+.news-boxes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 40px 30px;
+}
+.news-item{
+    width: calc((100% / 2) - 15px );
+    display: flex;
+}
+.news-left-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 32px 38px 32px;
+    width: calc(100% - 368px);
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px;
+    border-left: 1px solid #D7D7D7;
+    border-bottom: 1px solid #D7D7D7;
+    border-top: 1px solid #D7D7D7;
+}
+.news-left-info .time{
+    font-size: var(--time-font);
+    font-weight: bold;
+    color: #FF6138;
+    transition: 0.3s;
+    line-height: 32px;
+    margin-bottom: 55px;
+    font-family: 'BPG DejaVu Sans';
+}
+.news-left-info .text{
+    font-size: var(--title3);
+    line-height: 28px;
+    max-height: 84px;
+    overflow: hidden;
+    color: #000;
+    margin-bottom: 70px;
+    font-family: 'BPG Nino Mtavruli';
+}
+.news-left-info .see-all-link{
+    font-size: var(--see-all);
+    display: flex;
+    align-items: center;
+    color: #000;
+    transition: 0.3s;
+    width: fit-content;
+    font-family: 'BPG DejaVu Sans';
+}
+.news-left-info .see-all-link span{
+    margin-left: 10px;
+    transition: 0.3s;
+}
+ .news-item:hover .see-all-link{
+    color: #232962;
+}
+ .news-item:hover .see-all-link span{
+    margin-left: 30px;
+}
+ .news-item:hover .see-all-link span svg path{
+    stroke: #232962;
+}
+.news-img{
+    max-width: 368px;
+    height: 369px;
+    border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+    overflow: hidden;
+}
+.news-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.3s;
+}
+.news-item:hover .news-img img{
+    transform: scale(1.08);
+}
+.create{
+    overflow: hidden;
+}
+.c-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+.c-top a{
+    max-width: 288px;
+    max-height: 114px;
+}
+.c-top a img{
+    width: 100%;
+    height: 100%;
+}
+.c-top .text{
+    margin-left: 5%;
+    font-size: var(--text1);
+    line-height: 30px;
+    max-height: 61px;
+    overflow: hidden;
+    color: #000;
+    width: calc(100% - 288px);
+    font-family: 'BPG DejaVu Sans';
+}
+
+.c-bot{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+ 
+    position: relative;
+}
+.c-bot::after{
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -50%;
+    width: 200%;
+    height: 1px;
+    background-color: #DFDFDF;
+}
+.c-bot span, .c-bot a{
+    font-size: var(--create-font);
+    color: #000;
+    font-family: 'BPG DejaVu Sans';
+}
+
+/* footer */
+.footer{
+    background-color: #232962;
+}
+.footer-contact{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+.footer-contact h2{
+    font-size: var(--title2);
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 32px;
+    margin-bottom: 10px;
+    font-family: 'BPG Nino Mtavruli';
+}
+.footer-contact a{
+    font-size: var(--text1);
+    color: #fff;
+    margin-top: 30px;
+    line-height: 28px;
+    transition: 0.3s;
+    font-family: 'BPG DejaVu Sans';
+}
+.footer-contact a:hover{
+    text-decoration: underline;
+}
+.footer-social{
+    margin-top: 130px;
+}
+.footer-social a{
+    margin-right: 45px;
+}
+.footer-social a svg path{
+    transition: 0.3s;
+}
+.footer-social a:hover svg path{
+    fill: #FF6138;
+}
+.footer-form {
+     
+    padding-left: 10%;
+}
+.footer-form form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.footer-form h2{
+    font-size: var(--title2);
+    font-weight: bold;
+    text-transform: capitalize;
+    color: #fff;
+    line-height: 32px;
+    margin-bottom: 45px;
+    font-family: 'BPG Nino Mtavruli';
+}
+.footer-form input[type="text"]{
+    padding-left: 8px;
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 20px;
+    line-height: 32px;
+    width: calc(50% - 40px);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #A09E9E;
+    background-color: transparent;
+    transition: 0.3s;
+    font-family: 'BPG DejaVu Sans';
+}
+.footer-form input[type="mail"]{
+    width: 100%;
+    margin-top: 50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #A09E9E;
+    background-color: transparent;
+    padding-left: 8px;
+    color: #fff;
+    font-size: 20px;
+    padding-bottom: 20px;
+    line-height: 32px;
+    transition: 0.3s;
+    font-family: 'BPG DejaVu Sans';
+}
+.footer-form button{
+    margin-top: 60px;
+    width: 221px;
+    height: 57px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FF6138;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    transition: 0.3s;
+    font-family: 'BPG DejaVu Sans';
+}
+.footer-form input:focus-visible{
+    border-bottom: 1px solid #fff;
+}
+.footer-form button:hover{
+    background-color: #fff;
+    color: #FF6138;
+}
+.row-2{
+    margin-top: 100px;
+}
+.footer-logo{
+    max-width: 208px;
+    max-height: 105px;
+}
+.footer-logo img{
+    width: 100%;
+    height: 100%;
+}
+.footer-links{
+    display: flex;
+    flex-direction: column;
+    padding-right: 20px;
+}
+.footer-links h2{
+    font-size: var(--text1);
+    font-weight: bold;
+    color: #fff;
+    line-height: 28px;
+    margin-bottom: 5px;
+    font-family: 'BPG Nino Mtavruli';
+}
+.footer-links a{
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+    margin-top: 15px;
+    transition: 0.3s;
+    font-family: 'BPG DejaVu Sans';
+}
+.footer-links a:hover{
+    text-decoration: underline;
+}
+/* footer */
