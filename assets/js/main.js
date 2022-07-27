@@ -6,3 +6,7 @@ $('.banner-slider').slick({
     autoplay:true,
     autoplaySpeed:4000
   });
+
+  $('.nav-links ul li a').hover(function(){
+    $('.bottom-header').toggleClass('submenu-active');
+  });
