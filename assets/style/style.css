@@ -7,6 +7,7 @@
     --nav-links-font: 18px;
     --lang-font: 18px;
     --banner-height: 454px;
+    --section-title: 24px;
     --title1: 26px;
     --title2: 22px;
     --title3: 20px;
@@ -19,6 +20,7 @@
     --see-all: 18px;
     --details-font: 16px;
     --create-font: 16px;
+    --brc-font: 16px;
 }
 .padding{
     padding: var(--padding);
@@ -139,6 +141,8 @@
     padding-left: 100px;
     position: relative;
     transition: 0.3s;
+    position: sticky;
+    top: 0;
 }
  
 .nav-links ul{
@@ -747,3 +751,240 @@
     text-decoration: underline;
 }
 /* footer */
+
+/* About Page */
+
+.banner-img{
+    width: 113%;
+    margin-left: -13%;
+    height: 340px;
+}
+.banner-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.brc{
+    width: 100%;
+    height: 89px;
+    position: relative;
+    margin-top: -89px;
+    z-index: 999;
+}
+.brc::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 60%;
+    left: 0;
+    top: 0;
+    background-color: rgba(35, 41, 98, 0.9);
+    z-index: -1;
+}
+.brc-link{
+    width: 100%;
+    height: 89px;
+    display: flex;
+    align-items: center;
+    gap: 22px;
+}
+.brc-link a{
+    font-size: var(--brc-font);
+    line-height: 26px;
+    color: #A4A4A4;
+    font-family: 'BPG DejaVu Sans';
+    transition: 0.3s;
+}
+.brc-link a:hover{
+    color: #fff;
+}
+.line-brc{
+    background-color: #A4A4A4;
+    width: 35px;
+    height: 1px;
+}
+.brc-link span{
+    font-size: var(--brc-font);
+    line-height: 26px;
+    color: #fff;
+    font-family: 'BPG DejaVu Sans';
+}
+.about-page-section{
+    width: 100%;
+    overflow: hidden;
+}
+.about-left-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 46px;
+}
+.about-left-box h1{
+    font-size: var(--section-title);
+    line-height: 32px;
+    color: #232962;
+    margin-bottom: 15px;
+    font-family: 'BPG Nino Mtavruli';
+    font-weight: bold;
+}
+.about-left-box .text{
+    font-size: var(--text1);
+    line-height: 30px;
+    color: #000;
+    font-family: 'BPG DejaVu Sans';
+    padding-right: 10px;
+}
+.r-img-box{
+    width: 100%;
+    height: 501px;
+    position: relative;
+    border-radius: 4px;
+    margin-top: 46px;
+}
+.r-img-box::before{
+    position: absolute;
+    content: "";
+    width: 150%;
+    height: 234px;
+    background-color: #EFEFEF;
+    bottom: -47px;
+    right: -80%;
+    border-bottom-left-radius: 4px;
+    z-index: -1;
+}
+.r-img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.about-gallery-box{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.about-img-item{
+    width: calc((100% / 6) - 25px);
+    height: 234px;
+    transition: 0.3s;
+    margin-top: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.about-img-item2{
+    width: calc((100% / 4) - 25px);
+}
+.about-img-item img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+/* About Page */
+.cit-container2{
+    background-color: rgba(246, 246, 246, 0.5);
+}
+.mg-b-1{
+    margin-bottom: 100px;
+}
+.right-accord{
+    margin-top: 96px;
+}
+.accord-box{
+    width: 100%;
+    background-color: #F6F6F6;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 80px 100px 80px;
+    overflow: hidden;
+    position: relative;
+}
+.accord-box h2{
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    font-size: var(--title3);
+    font-weight: bold;
+    color: #000;
+    font-family: 'BPG Nino Mtavruli';
+}
+.accord-box h2::after{
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 35%;
+    height: 1px;
+    background-color: #FF6138;
+}
+.accord-box ul{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    gap: 30px;
+}
+.accord-box ul li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.top-links-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.top-links-box a{
+    font-size: var(--text1);
+    color: #000;
+    font-family: 'BPG DejaVu Sans';
+    margin-bottom: 28px;
+}
+.top-links-box span{
+    cursor: pointer;
+}
+.hidden-links-box{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 28px;
+    position: relative;
+    max-height: 0;
+    overflow-y: hidden;
+}
+.hidden-links-box a{
+    font-size: 16px;
+    color: #878787;
+    font-family: 'BPG DejaVu Sans';
+    position: relative;
+    transition: 0.3;
+}
+.hidden-links-box a:hover{
+    color: #232962;
+}
+.hidden-links-box::after{
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    height: 108%;
+    width: 2px;
+    background-color: #D9D9D9;
+}
+.hidden-links-box a:before{
+    position: absolute;
+    content: "";
+    top: 40%;
+    left: -32px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #FF6138;
+    z-index: 5;
+}
+.active-accord .hidden-links-box{
+    max-height: 300px;
+
+}
