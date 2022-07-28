@@ -13,4 +13,5 @@ $('.banner-slider').slick({
 
   $('.top-links-box span').click(function(){
     $(this).parents('.accord-box ul li').toggleClass('active-accord').siblings().removeClass('active-accord');
+    
   });
