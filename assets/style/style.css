@@ -446,6 +446,14 @@
 .service-item a:hover{
     color: #232962;
 }
+.service-item span {
+    max-width: 65px;
+    max-height: 65px;
+}
+.service-item span img{
+    width: 100%;
+    height: 100%;
+}
 .news-section{
     width: 100%;
     background: rgba(246, 246, 246, 0.5);
@@ -1445,4 +1453,43 @@
 .link-text-03:hover .text{
     color: #232962;
 }
+.video-det-box{
+    margin-top: 0;
+}
+.video-det-box h1{
+    color: #FF6138;
+    font-size: 18px;
+    line-height: 32px;
+    font-weight: bold;
+    font-family: 'BPG DejaVu Sans';
+}
+.right-accord{
+    margin-top: 0;
+}
+.det-video-item-p{
+    width: 634px;
+    height: 379px;
+    position: relative;
+    margin-top: 40px;
+    border-radius: 4px;
+    overflow: hidden;
+}
+.det-video-item-p a{
+    display: block;
+}
+.det-video-item-p img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.det-video-item-p span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.det-video-item-p:hover span svg path{
+    fill: red;
+}   
 /* Video  gallery */
