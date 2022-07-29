@@ -1268,3 +1268,181 @@
     transform: scale(1.09);
 }
 /* Publications */
+/* Questions */
+
+.question-boxes{
+    width: 85%;
+    display: flex;
+    flex-direction: column;
+}
+.question-item{
+    width: 100%;
+}
+.question-item ol{
+    list-style: none; 
+    counter-reset: li;
+}
+.question-item ol li {
+    counter-increment: li;
+    position: relative;
+    padding-left: 18px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.question-item ol li:last-child{
+    margin-bottom: initial;
+}
+.question-item ol li::before {
+    position: absolute;
+    content: counter(li)".";
+    display: inline-block; 
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    left: 0;
+    top: -2px;
+}
+.question{
+    position: relative;
+    padding-bottom: 25px;
+}
+.quest-t{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.question::before{
+    content: "";
+    position: absolute;
+    left: -20px;
+    bottom: 0;
+    width: calc(100% + 20px);
+    height: 1px;
+    background-color: #F1F1F1;
+}
+.question a{
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    font-family: 'BPG Nino Mtavruli';
+    line-height: 28px;
+}
+.question span{
+    padding: 5px;
+    transform: rotate(90deg);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+.result{
+    color: #6B6B6B;
+    font-size: 18px;
+    line-height: 30px;
+    width: 73%;
+    max-height: 0;
+    overflow: hidden;
+    font-family: 'BPG DejaVu Sans';
+    transition: 0.3s;
+    display: block;
+    padding-bottom: 0;
+}
+.show-result .question .quest-t span{
+    transform: rotate(-90deg);
+}
+.show-result .question .quest-t span svg path{
+    fill: #FF6138;
+}
+.show-result .question .result{
+    max-height: 117px;
+    padding-bottom: 7px;
+    padding-top: 20px;
+
+}
+/* Questions */
+
+/* Video gallery */
+
+.video-gallery{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 30px;
+}
+.video-item{
+    width: calc((100% / 4) - 23px);
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.video-img-side{
+    width: 100%;
+    height: 220px;
+}
+.video-img-side span svg path{
+    transition: 0.3s;
+}
+.video-img-side:hover span svg path{
+    fill: red;
+}
+.vide-img{
+    width: 100%;
+    height: 220px;
+    position: relative;
+    border-radius: 4px;
+}
+.vide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.video-img-side span{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.video-img-side .time-03{
+    position: absolute;
+    line-height: 32px;
+    color: #fff;
+    font-family: 'BPG DejaVu Sans';
+    font-size: 18px;
+    background: #232962;
+    padding: 12px 29px;
+    top: -26px;
+    right: 0;
+}
+.link-text-03{
+    margin-top: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.link-text-03 h2{
+    font-size: 20px;
+    color: #000;
+    font-family: 'BPG Nino Mtavruli';
+    line-height: 28px;
+    height: 50px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+.link-text-03 .text{
+    color: #878787;
+    font-family: 'BPG DejaVu Sans';
+    line-height: 28px;
+    height: 56px;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.link-text-03:hover h2,
+.link-text-03:hover .text{
+    color: #232962;
+}
+/* Video  gallery */
