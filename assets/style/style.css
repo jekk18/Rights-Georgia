@@ -1493,3 +1493,212 @@
     fill: red;
 }   
 /* Video  gallery */
+/* Contact */
+
+.contact-left-info{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+.comp-contact-info{
+    display: flex;
+    flex-direction: column;
+}
+.comp-contact-info h2{
+    font-size: var(--text1);
+    color: #000;
+    line-height: 26px;
+    font-family: 'BPG DejaVu Sans';
+    margin-bottom: 24px;
+}
+.comp-contact-info a {
+    font-size: var(--text1);
+    color: #232962;
+    line-height: 26px;
+    font-family: 'BPG DejaVu Sans';
+    transition: 0.3s;
+}
+.comp-contact-info a:hover{
+    text-decoration: underline;
+}
+.social-contact{
+    display: flex;
+    margin-top: 10px;
+    gap: 35px;
+}
+ 
+.social-contact i a svg path{
+    transition: 0.3s;
+    fill: #B4B4B4;
+}
+.social-contact i a:hover svg path{
+    fill: #FF6138;
+}
+.map{
+    width: 100%;
+    height: 480px;
+}
+.map iframe{
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+.contact-left-form{
+    width: 100%;
+    padding-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 35px;
+}
+.contact-left-form input{
+    outline: none;
+    border: none;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000;
+    border-bottom: 1px solid #E1E1E1;
+    width: calc((100% / 2) - 18px);
+    font-family: 'BPG DejaVu Sans';
+    padding-left: 10px;
+    padding-bottom: 18px;
+    transition: 0.3s;
+}
+.contact-left-form input[type="number"]::-webkit-inner-spin-button{
+    appearance: none;
+}
+.contact-left-form input::placeholder,
+.contact-left-form textarea::placeholder{
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'BPG DejaVu Sans';
+    color: #757575;
+}
+.contact-left-form input:focus-visible,
+.contact-left-form textarea:focus-visible{
+    border-bottom: 1px solid #000;
+}
+.contact-left-form textarea{
+    outline: none;
+    border: none;
+    font-size: 18px;
+    line-height: 32px;
+    color: #000;
+    border-bottom: 1px solid #E1E1E1;
+    width: 100%;
+    height: 55px;
+    font-family: 'BPG DejaVu Sans';
+    padding-left: 10px;
+    padding-bottom: 10px;
+    resize: none;
+    transition: 0.3s;
+}
+.contact-left-form button{
+    background: #FF6138;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+    padding: 14px 65px;
+    font-size: 18px;
+    color: #fff;
+    font-family: 'BPG DejaVu Sans';
+    margin-top: 20px;
+}
+/* Contact */
+/* Search */
+.brc2{
+    margin-top: initial;
+    z-index: 1;
+}
+.brc2::before{
+    background-color: #fff;
+}
+.brc2 .brc-link a:hover{
+    color: #FF6138;
+}
+.brc2 .brc-link span{
+    color: #FF6138;
+}
+.search-form-box{
+    width: 100%;
+    padding-left: 50px;
+    margin-top: 50px;
+}
+.search-form-box form{
+    width: 100%;
+    position: relative;
+}
+.search-form-box form input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #232962;
+    padding-bottom: 20px;
+    color: #000;
+    font-size: 20px;
+    font-family: 'BPG Nino Mtavruli';
+    line-height: 36px;
+    padding-left: 10px;
+}
+.search-form-box form input::placeholder{
+    color: #A09E9E;
+    font-size: 20px;
+    font-family: 'BPG Nino Mtavruli';
+}
+.search-form-box form button{
+    position: absolute;
+    right: 10px;
+    bottom: 18px;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+}
+.search-result-count{
+    font-size: 14px;
+    color: #FF6138;
+    font-family: 'BPG DejaVu Sans';
+    margin-top: 20px;
+    margin-bottom: 34px;
+}
+.search-result-count span{
+    margin: 0 5px;
+}
+.search-result-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.search-result-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+.search-result-item h1{
+    font-size: 20px;
+    font-weight: bold;
+    color: #232962;
+    font-family: 'BPG Nino Mtavruli';
+    line-height: 36px;
+    margin-bottom: 16px;
+}
+.search-result-item .text{
+    font-size: 18px;
+    line-height: 30px;
+    max-height: 59px;
+    overflow: hidden;
+    color: #000;
+    font-family: 'BPG DejaVu Sans';
+    margin-bottom: 30px;
+}
+.line-res{
+    width: 10%;
+    height: 2px;
+    background-color: #FF6138;
+    margin-bottom: 30px;
+    transition: 0.3s;
+}
+.search-result-item:hover .line-res{
+    width: 15%;
+}
+/* Search */
