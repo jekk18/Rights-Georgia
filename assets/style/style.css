@@ -267,14 +267,14 @@
     text-transform: capitalize;
     color: #FFFFFF;
     line-height: 32px;
-    margin-bottom: 15px;
     font-family: 'BPG Nino Mtavruli';
 }
 .slider-text .text{
     color: #FFFFFF;
     line-height: 26px;
-    max-height: 58px;
+    max-height: 55px;
     overflow: hidden;
+    margin-top: 15px;
     font-family: 'BPG DejaVu Sans';
 }
 /* BAnner */

@@ -19,3 +19,12 @@ $('.banner-slider').slick({
   $('.question .quest-t span').click(function(){
     $(this).parents('.question-item ol li').toggleClass('show-result').siblings().removeClass('show-result');
   });
+  $(document).ready(function(){
+    var textLength = $('.slider-text .text');
+     for(var i = 0; i< textLength.length; i++){
+      if($(textLength[i]).text().length <= 0){
+        $(textLength[i]).css('display', 'none');
+      }
+     }
+     
+  })
