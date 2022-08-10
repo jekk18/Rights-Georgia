@@ -1526,6 +1526,7 @@
     line-height: 26px;
     font-family: 'BPG DejaVu Sans';
     transition: 0.3s;
+    width: fit-content;
 }
 .comp-contact-info a:hover{
     text-decoration: underline;
@@ -1561,18 +1562,48 @@
     flex-wrap: wrap;
     gap: 50px 35px;
 }
-.contact-left-form input{
+.contact-left-form .input-lab-box{
+    width: calc((100% / 2) - 18px);
+    height: 52px;
+    position: relative;
+}
+.contact-left-form .input-lab-box label{
+    font-size: 18px;
+    line-height: 32px;
+    font-family: 'BPG DejaVu Sans';   
+    position: relative;
+    padding-left: 10px;
+}
+.contact-left-form .input-lab-box:focus-within label::after{
+    z-index: 0;
+}
+.contact-left-form .input-lab-box label::after{
+    position: absolute;
+    content: "*";
+    top: -5px;
+    right: -10px;
+    color: red;
+    z-index: 9;
+}
+.hidden-validate::after{
+    z-index: 0!important;
+}
+.contact-left-form .input-lab-box input{
     outline: none;
     border: none;
     font-size: 18px;
     line-height: 32px;
     color: #000;
     border-bottom: 1px solid #E1E1E1;
-    width: calc((100% / 2) - 18px);
+    width: 100%;
     font-family: 'BPG DejaVu Sans';
     padding-left: 10px;
     padding-bottom: 18px;
     transition: 0.3s;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 .contact-left-form input[type="number"]::-webkit-inner-spin-button{
     appearance: none;
@@ -1584,6 +1615,8 @@
     font-family: 'BPG DejaVu Sans';
     color: #757575;
 }
+ 
+ 
 .contact-left-form input:focus-visible,
 .contact-left-form textarea:focus-visible{
     border-bottom: 1px solid #000;
