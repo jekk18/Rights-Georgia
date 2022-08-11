@@ -29,7 +29,7 @@ $('.banner-slider').slick({
      
   })
   
-  $('.contact-left-form .input-lab-box input').keyup(function(){
+  $('.input-lab-box input').keyup(function(){
     if($(this).val().length > 0){
       $(this).prev().addClass('hidden-validate');
     }else{
