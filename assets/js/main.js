@@ -33,7 +33,7 @@ $('.banner-slider').slick({
     if($(this).val().length > 0){
       $(this).prev().addClass('hidden-validate');
     }else{
-      $('.contact-left-form .input-lab-box label').removeClass('hidden-validate');
+      $(this).prev().removeClass('hidden-validate');
     }
   }) 
 
