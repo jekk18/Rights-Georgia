@@ -1616,12 +1616,16 @@
     color: #757575;
 }
  
- 
+.contact-left-form  .input-lab-width{
+    width: 100%;
+    height: 55px;
+ }
+
 .contact-left-form input:focus-visible,
 .contact-left-form textarea:focus-visible{
     border-bottom: 1px solid #000;
 }
-.contact-left-form textarea{
+/* .contact-left-form textarea{
     outline: none;
     border: none;
     font-size: 18px;
@@ -1635,7 +1639,7 @@
     padding-bottom: 10px;
     resize: none;
     transition: 0.3s;
-}
+} */
 .contact-left-form button{
     background: #FF6138;
     border: none;
