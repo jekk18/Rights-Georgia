@@ -145,8 +145,8 @@
  
 .nav-links ul{
     display: flex;
-    align-items: center;
     padding: 0;
+    padding-bottom: 16px;
 }
 .nav-links ul li a{
     padding: 26px 22px;
@@ -200,9 +200,11 @@
     color: #232962;
     font-family: 'BPG DejaVu Sans';
     font-size: 16px;
-    padding: 28px;
+    padding: 30px;
     transition: 0.4s;
     padding-right: 80px;
+    padding-bottom: 12px;
+    padding-left: 0;
 }
 .submenu-links::before{
     position: absolute;
@@ -222,6 +224,46 @@
  
 .nav-links ul li:hover .submenu-links{
     display: flex;
+}
+
+.sub-child-li{
+    display: flex;
+    flex-direction: column;
+}
+.sub-child-link-box{
+    display: flex;
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.nav-links ul li a.sub-child-link{
+    display: flex;
+    align-items: center;
+    color: #232962;
+    font-size: 16px;
+    font-family: 'BPG DejaVu Sans';
+    padding: 0;
+    padding-bottom: 12px;
+    line-height: 30px;
+    font-weight: 400;
+    transition: 0.3s;
+}
+.sub-line-link{
+    width: 24px;
+    height: 1px;
+    background-color: #232962;
+    margin-right: 12px;
+}
+.nav-links ul li a.sub-child-link:hover{
+    color: #F45228;
+}
+ 
+.nav-links ul li a.sub-child-link::before{
+    display: none;
+}
+.sub-child-li:hover .sub-child-link-box{
+    max-height: 300px;
 }
 /* Banner */
 .banner{
