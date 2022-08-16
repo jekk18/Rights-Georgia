@@ -37,5 +37,19 @@ $('.banner-slider').slick({
     }
   }) 
 
+  $('.sub-li').hover(function(){
+    if($(this).children('.sub-child-link').length > 0){
+       $('.sub-menu').toggleClass('sub-menu-active');
+    }else{
+      console.log('noHover')
+    }
+  });
+  $('.sub-child-li').hover(function(){
+    if($(this).children('.sub-child-child-link').length > 0){
+       $('.sub-menu').toggleClass('sub-menu-active2');
+    }else{
+      console.log('noHover')
+    }
+  });
  
  

@@ -139,6 +139,7 @@
     border-top-right-radius: 4px;
     padding-left: 100px;
     position: relative;
+    z-index: 999;
     transition: 0.3s;
     height: 79px;
 }
@@ -148,7 +149,10 @@
     padding: 0;
     padding-bottom: 16px;
 }
-.nav-links ul li a{
+.nav-links ul li{
+    position: relative;
+}
+ .link-col{
     padding: 26px 22px;
     font-size: var(--nav-links-font);
     color: #FFFFFF;
@@ -156,19 +160,14 @@
     transition: 0.3s;
     display: block;
     font-family: 'BPG Nino Mtavruli';
-    position: relative;
+    /* position: relative; */
+    width: fit-content;
+}
+.nav-links ul li:hover .link-col,
+.nav-links ul li.colored .link-col{
+    background-color: #000858;
 }
  
-.nav-links ul li a::before{
-    position: absolute;
-    content: "";
-    width: 0;
-    height: 1px;
-    background-color: #fff;
-    bottom: 20px;
-    left: 9%;
-    transition: 0.3s;
-}
 .contact-link{
     font-size: var(--nav-links-font);
     color: #FFFFFF;
@@ -179,12 +178,9 @@
     border-top-right-radius: 4px;
     font-family: 'BPG Nino Mtavruli';
 }
-.nav-links ul li:hover a::before,
-.nav-links ul li.colored a::before{
-    width: 83%;
-}
  
-.submenu-links{
+ 
+/* .submenu-links{
     position: absolute;
     display: flex;
     align-items: center;
@@ -206,14 +202,7 @@
     padding-bottom: 12px;
     padding-left: 0;
 }
-.submenu-links::before{
-    position: absolute;
-    content: "";
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: #EFEFEF;
-}
+ 
 .submenu-links .s-link:hover,
 .submenu-links  .colored-2{
     color: #F45228;
@@ -264,6 +253,110 @@
 }
 .sub-child-li:hover .sub-child-link-box{
     max-height: 300px;
+} */
+.nav-links ul li:hover .sub-menu{
+    display: flex;
+}
+.sub-li{
+    text-align: center;
+    width: 108%;
+    padding-right: 3%;
+}
+.sub-a{
+    width: 100%;
+    display: block;
+}
+.sub-menu{
+    width: fit-content;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #Fff;
+    position: absolute;
+    width: 520px;
+    margin-left: -345px;
+    display: none;
+    transition: 0.3s;
+    z-index: 99999;
+}
+.nav-links ul li:first-child .sub-menu{
+    margin-left: -100px;
+}
+.nav-links ul li:nth-child(2) .sub-menu{
+    margin-left: -165px;
+}
+.nav-links ul li:nth-child(3) .sub-menu{
+    margin-left: -140px;
+}
+.nav-links ul li:nth-child(4) .sub-menu{
+    margin-left: -150px;
+}
+.nav-links ul li:nth-child(5) .sub-menu{
+    margin-left: -180px;
+}
+.nav-links ul li:nth-child(2) .sub-menu-active{
+    margin-left: -260px;
+}
+.nav-links ul li:nth-child(2) .sub-menu-active2{
+    margin-left: -345px;
+}
+.nav-links ul li:nth-child(3) .sub-menu-active {
+    margin-left: -200px;
+}
+.nav-links ul li:nth-child(3) .sub-menu-active2 {
+    margin-left: -588px;
+}
+.nav-links ul li:nth-child(4) .sub-menu-active {
+    margin-left: -360px;
+}
+.nav-links ul li:nth-child(4) .sub-menu-active2 {
+    margin-left: -832px;
+}
+.nav-links ul li:nth-child(5) .sub-menu-active {
+    margin-left: -558px;
+}
+.nav-links ul li:nth-child(5) .sub-menu-active2 {
+    margin-left: -1076px;
+}
+.sub-child-link{
+    position: absolute;
+    right: -520px;
+    top: 0;
+    height: 100%;
+    background-color: #fff;
+    width: 520px;
+    display: none;
+    transition: 0.3s;
+}
+.sub-li:hover .sub-child-link{
+    display: block;
+}
+.sub-pos-relative{
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding-top: 30px;
+}
+.sub-child-li{
+    display: flex;
+    flex-direction: column;
+}
+.sub-child-child-link{
+    position: absolute;
+    top: 0;
+    right: -520px;
+    background-color: #fff;
+    height: 100%;
+    padding-top: 30px;
+    width: 520px;
+    display: none;
+    transition: 0.3s;
+}
+.sub-child-li:hover .sub-child-child-link{
+    display: block;
 }
 /* Banner */
 .banner{
@@ -371,6 +464,10 @@
     background-color: #EFEFEF;
     transition: 0.3s;
 }
+.img-svg{
+    position: absolute;
+    top: 62px;
+}
 .line-img{
     position: absolute;
     top: 0;
@@ -383,7 +480,7 @@
     max-height: 51px;
     overflow: hidden;
     color: #232962;
-    margin-top: 27px;
+    margin-top: 110px;
     font-family: 'BPG Nino Mtavruli';
 }
 .cit-item:hover{
@@ -883,7 +980,7 @@
     line-height: 30px;
     color: #000;
     font-family: 'BPG DejaVu Sans';
-    padding-right: 10px;
+    padding-right: 50px;
 }
 .r-img-box{
     width: 100%;
