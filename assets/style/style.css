@@ -1332,7 +1332,10 @@
     font-family: 'BPG DejaVu Sans';
     transition: 0.3s;
 }
- 
+ .h-links-2 span{
+    max-height: 54px;
+    overflow: hidden;
+ }
 .hidden-links-box2 ul li a:hover{
     color: #232962;
 }

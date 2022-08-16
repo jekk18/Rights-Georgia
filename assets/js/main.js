@@ -51,5 +51,34 @@ $('.banner-slider').slick({
       console.log('noHover')
     }
   });
+
+
+  $(function() {
+    var increment = 4;
+    var startFilter = 0;
+    var endFilter = increment;
+    var $this = $('.publications-box');
+    var elementLength = $this.find('a.publication-item').length;
+    $('.listLength').text(elementLength);
+
+    if (elementLength > 2) {
+        $('.buttonToogle').show();
+    }
+    $('.publications-box a.publication-item').slice(startFilter, endFilter).addClass('shown');
+    $('.shownLength').text(endFilter);
+    $('.publications-box a.publication-item').not('.shown').hide();
+    $('.see-all').on('click', function() {
+        if (elementLength > endFilter) {
+            startFilter += increment;
+            endFilter += increment;
+            $('.publications-box a.publication-item').slice(startFilter, endFilter).not('.shown').addClass('shown').toggle(500);
+            $('.shownLength').text((endFilter > elementLength) ? elementLength : endFilter);
+            if (elementLength <= endFilter) {
+                $(this).remove();
+            }
+        }
+
+    });
+});
  
  
