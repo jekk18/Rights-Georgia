@@ -40,7 +40,9 @@ $('.banner-slider').slick({
   $('.sub-li').hover(function(){
     if($(this).children('.sub-child-link').length > 0){
        $('.sub-menu').toggleClass('sub-menu-active');
-       $('.nav-links ul li').toggleClass('pos-initial')
+       $('.nav-links ul li').toggleClass('pos-initial');
+       $(this).toggleClass('hover-bg').siblings().removeClass('hover-bg');
+       $(this).children('.sub-a').toggleClass('hover-bg1').siblings().removeClass('hover-bg1');
     }else{
       console.log('noHover')
        
@@ -49,6 +51,8 @@ $('.banner-slider').slick({
   $('.sub-child-li').hover(function(){
     if($(this).children('.sub-child-child-link').length > 0){
        $('.sub-menu').toggleClass('sub-menu-active2');
+       $(this).toggleClass('hover-bg2').siblings().removeClass('hover-bg2');
+       $(this).children('.sub-a').toggleClass('hover-bg3').siblings().removeClass('hover-bg3');
     }else{
       console.log('noHover')
     }
