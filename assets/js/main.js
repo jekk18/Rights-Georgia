@@ -89,7 +89,7 @@ $('.child-sub-li').hover(function(){
   }
 });
 
-$('.link-col').toUpperCase();
+ 
 
   $(function() {
     var increment = 4;

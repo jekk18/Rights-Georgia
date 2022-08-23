@@ -436,7 +436,7 @@
     font-size: 22px;
     font-weight: bold;
     line-height: 30px;
-    max-height: 51px;
+    max-height: 54px;
     overflow: hidden;
     color: #232962;
     margin-top: 110px;
@@ -1905,4 +1905,40 @@
 .sub-li:last-child, 
 .sub-child-li:last-child{
     padding-bottom: 25px;
+}
+
+
+html:lang(ka) .logo-text,
+html:lang(ka) .link-col,
+html:lang(ka) .cit-title-box h1,
+html:lang(ka) .sub-a,
+html:lang(ka) .child-sub-a,
+html:lang(ka) .grandson-a,
+html:lang(ka) .contact-link,
+html:lang(ka) .slider-text h2,
+html:lang(ka) .cit-item h1,
+html:lang(ka) .see-all,
+html:lang(ka) .banner-2 .text-box h2,
+html:lang(ka) .news-title h2,
+html:lang(ka) .news-left-info .see-all-link,
+html:lang(ka) .footer-contact h2,
+html:lang(ka) .footer-links h2,
+html:lang(ka) .footer-form h2,
+html:lang(ka) .footer-form button,
+html:lang(ka) .details-link,
+html:lang(ka) .about-left-box h1,
+html:lang(ka) .c-bot span, 
+html:lang(ka) .c-bot a,
+html:lang(ka) .important-title h1,
+html:lang(ka) .contact-left-form button,
+html:lang(ka) .brc-link a,
+html:lang(ka) .publication-item h3,
+html:lang(ka) .question a,
+html:lang(ka) .accord-box h2,
+html:lang(ka) .search-result-item h1,
+html:lang(ka) .top-links-box a,
+html:lang(ka) .sub-item h2,
+html:lang(ka) .link-text-03 h2{
+    
+    font-feature-settings: "case" on;
 }
