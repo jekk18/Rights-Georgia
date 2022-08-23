@@ -21,6 +21,7 @@
     --details-font: 16px;
     --create-font: 16px;
     --brc-font: 16px;
+    --submenu-a-font: 16px;
 }
 .padding{
     padding: var(--padding);
@@ -149,9 +150,11 @@
     padding: 0;
     padding-bottom: 16px;
 }
-.nav-links ul li{
-    position: relative;
-}
+ .nav-li{
+    display: flex;
+    flex-direction: column;
+
+ }
  .link-col{
     padding: 26px 30px;
     font-size: var(--nav-links-font);
@@ -183,153 +186,137 @@
     border-top-right-radius: 4px;
     font-family: 'BPG Nino Mtavruli';
 }
- 
- 
- 
 
-.nav-links ul li:hover .sub-menu{
-    display: flex;
+.nav-li:hover .sub-menu-1{
+    max-height: 800px;
+    overflow: initial;
 }
-.sub-li{
-    text-align: center;
-    width: 108%;
-    padding-right: 3%;
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
- 
-.sub-a{
-    width: 100%;
-    display: block;
-}
-.sub-menu{
-    width: fit-content;
-    display: flex;
-    flex-direction: column;
-    background-color: #Fff;
+
+ /* Submenu */
+ .sub-menu-1{
     position: absolute;
-    width: 520px;
     left: 0;
-    display: none;
-    transition: 0.3s;
-    z-index: 99999;
-}
- .hover-bg .hover-bg1,
- .hover-bg2 .hover-bg3{
-    color: #565656;
-    font-weight: bold;
- }
- .hover-bg .hover-bg1 span,
- .hover-bg2 .hover-bg3 span{
-    opacity: 1;
- }
-.nav-links ul li.pos-initial{
-    position: initial;
-}
-/* .nav-links ul li:first-child .sub-menu{
-    margin-left: -100px;
-}
-.nav-links ul li:nth-child(2) .sub-menu{
-    margin-left: -165px;
-}
-.nav-links ul li:nth-child(3) .sub-menu{
-    margin-left: -140px;
-}
-.nav-links ul li:nth-child(4) .sub-menu{
-    margin-left: -150px;
-}
-.nav-links ul li:nth-child(5) .sub-menu{
-    margin-left: -180px;
-}
-.nav-links ul li:nth-child(2) .sub-menu-active{
-    margin-left: -260px;
-}
-.nav-links ul li:nth-child(2) .sub-menu-active2{
-    margin-left: -345px;
-}
-.nav-links ul li:nth-child(3) .sub-menu-active {
-    margin-left: -200px;
-}
-.nav-links ul li:nth-child(3) .sub-menu-active2 {
-    margin-left: -588px;
-}
-.nav-links ul li:nth-child(4) .sub-menu-active {
-    margin-left: -360px;
-}
-.nav-links ul li:nth-child(4) .sub-menu-active2 {
-    margin-left: -832px;
-}
-.nav-links ul li:nth-child(5) .sub-menu-active {
-    margin-left: -558px;
-}
-.nav-links ul li:nth-child(5) .sub-menu-active2 {
-    margin-left: -1076px;
-} */
-.sub-child-link{
-    position: absolute;
-    right: -520px;
-    top: 0;
-    height: 100%;
-    background-color: #fff;
-    width: 520px;
-    display: none;
-    transition: 0.3s;
-}
-.sub-li:hover .sub-child-link{
-    display: block;
-}
-.sub-pos-relative{
-    background: #fff;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    height: 100%;
     width: 100%;
-    border-left: 1px solid #E4E4E4;
-}
-.sub-child-li{
+    background-color: #fff;
+    top: 79px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+ }
+ .sub-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0 10px;
+    width: 100%;
+ }
+ .link-sub{
+    display: flex;
+    align-items: center;
+ }
+ .link-sub img{
+    margin-right: 20px;
+    display: none;
+ }
+ .sub-li{
+    width: calc((100% / 3) - 10px);
+    padding: 12px 0;
+    padding-left: 26px;
+ }
+ .sub-li:first-child,  .sub-li:nth-child(2),  .sub-li:nth-child(3){
+    padding-top: 27px;
+ }
+ .sub-li:last-child{
+    padding-bottom: 27px;
+ }
+ .sub-li:nth-child(3n-2){
+    padding-left: 50px;
+ }
+ .sub-a, .child-sub-a, .grandson-a{
+    font-size: var(--submenu-a-font);
+    color: #8C8C8C;
+    font-family: 'BPG DejaVu Sans';
+    transition: 0.3s;
+    width: 100%;
+    display: block;
+ }
+ .sub-a:hover{
+    font-weight: bold;
+ }
+
+ /* Sub-menu-2 */
+
+ .sub-menu-2 .sub-container{
+    width: 520px;
+    position: relative;
     display: flex;
     flex-direction: column;
-}
-.sub-child-child-link{
+ }
+ .sub-menu-2 .sub-li, .sub-menu-2 .child-sub-li{
+    padding: 12px 0;
+    padding-left: 50px;
+    width: 100%;
+ }
+ 
+ .sub-menu-2 .sub-li:first-child, .sub-menu-2 .child-sub-li:first-child{
+    padding-top: 27px;
+ }
+ .sub-menu-2 .sub-li:last-child, .sub-menu-2 .child-sub-li:last-child{
+    padding-bottom: 27px;
+ }
+ .sub-menu-2 .child-sub-menu-1{
     position: absolute;
-    top: 0;
-    right: -520px;
-    background-color: #fff;
-    height: 100%;
+    left: 520px;
     width: 520px;
+    display: flex;
+    flex-direction: column;
+    top: 0;
     display: none;
     transition: 0.3s;
-    border-left: 1px solid #E4E4E4;
-}
-.sub-child-li:hover .sub-child-child-link{
-    display: block;
-}
-.sub-a{
-    font-size: 16px;
-    color: #8C8C8C;
-    transition: 0.3s;
-    font-family: 'BPG DejaVu Sans';
-    line-height: 26px;
-    margin-left: -16px;
-}
-.sub-a span{
-    margin-right: 16px;
-    transition-duration: 0.3s;
-    opacity: 0;
-}
-.sub-a:hover{
-    color: #565656;
-    font-weight: bold;
-}
-.sub-a:hover span{
-     opacity: 1;
-}
+ }
+ .sub-menu-2 .sub-li:hover .child-sub-menu-1{
+    display: flex;
+ }
+ /* Sub-menu-2 */
+ /* Grandson submenu */
+ .grandson-sub-menu-1{
+    position: absolute;
+    top: 0;
+    left: 520px;
+    width: 520px;
+    transition: 0.5s;
+    height: 174px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+ }
+ .sub-menu-2 .grandson-sub-menu-1 .grandson-a{
+    padding: 12px 0;
+    padding-left: 50px;
+    width: 100%;
+ }
+ .sub-menu-2 .grandson-sub-menu-1 .grandson-li:first-child .grandson-a{
+    padding-top: 27px;
+ }
+ .sub-menu-2 .grandson-sub-menu-1 .grandson-li:last-child .grandson-a{
+    padding-bottom: 27px;
+ }
+ .child-sub-li:hover .grandson-sub-menu-1{
+    display: flex;
+ }
+ .img-rp{
+    width: 360px;
+    height: 150px;
+    right: 0;
+    position: absolute;
+ }
+ .remove-img{
+    display: none;
+ }
+ /* Grandson submenu */
+ /* Submenu */
+
  
-.sub-child-li{
-    padding-top: 8px;
-    padding-bottom: 8px;
-}
+ 
 /* Banner */
 .banner{
     position: relative;
@@ -421,7 +408,7 @@
     font-family: 'BPG DejaVu Sans';
 }
 .see-all:hover{
-    color: #232962;
+    color: #F45228;
 }
 .cit-item{
     width: 100%;
@@ -554,7 +541,7 @@
     font-family: 'BPG DejaVu Sans';
 }
 .service-item a:hover{
-    color: #232962;
+    color: #F45228;
 }
 .service-item span {
     max-width: 65px;
