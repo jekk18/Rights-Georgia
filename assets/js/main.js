@@ -82,7 +82,22 @@ $('.nav-li').hover(function(){
       $(this).children('.sub-menu-1').height(res);
    }
 });
-
+$('.nav-li').hover(function(){
+  var SubLi =  $(this).children('.sub-menu-1').children('.sub-container').children('.sub-li').length;
+     
+   for(var i=0; i<SubLi; i++){
+    var len = $(this).children('.sub-menu-1').children('.sub-container').children('.sub-li');
+     
+     if($(len[i]).children('.child-sub-menu-1').children().length > 0){
+      $(len[i]).toggleClass('hover-active');
+        return false;
+     } 
+   }
+});
+$('.sub-li').hover(function(){
+  $(this).siblings().removeClass('hover-active');
+  $(this).toggleClass('hover-active')
+});
 $('.child-sub-li').hover(function(){
  if($(this).children('.grandson-sub-menu-1').children('.grandson-li').length > 0){
   $(this).children('.grandson-sub-menu-1').children('.img-rp').addClass('remove-img');
