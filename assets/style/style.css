@@ -189,7 +189,7 @@
 
 .nav-li:hover .sub-menu-1{
     max-height: 800px;
-    overflow: initial;
+    /* overflow: initial; */
 }
 
  /* Submenu */
@@ -283,8 +283,26 @@
     top: 0;
     display: none;
     transition: 0.3s;
+    
  }
- 
+ .sub-menu-2 .sub-container::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 519px;
+    width: 1px;
+    height: 1000%;
+    background-color: #E4E4E4;
+ }
+ .sub-menu-2 .sub-container::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 1038px;
+    width: 1px;
+    height: 1000%;
+    background-color: #E4E4E4;
+ }
  /* Sub-menu-2 */
  /* Grandson submenu */
  .grandson-sub-menu-1{
