@@ -102,6 +102,7 @@ $(document).ready(function(){
 $('.sub-li').hover(function(){
   $(this).toggleClass('hover-active')
   $(this).siblings().removeClass('hover-active');
+  $(this).children('.child-sub-menu-1').children('.child-sub-li').siblings().removeClass('hover-active2');
 });
 
 $('.child-sub-li').hover(function(){
