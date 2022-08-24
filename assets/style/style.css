@@ -344,7 +344,7 @@
  .grandson-sub-menu-1 .grandson-li.hover-active3 .link-sub .img-13{
     display: block;
  }
- 
+
  /* .sub-menu-2 .sub-li.hover-active  .child-sub-menu-1 .child-sub-li:first-child   .sub-a1 {
     font-weight: bold;
  }
@@ -815,6 +815,10 @@
     background-color: transparent;
     transition: 0.3s;
     font-family: 'FiraGO';;
+}
+.footer-form input[type="text"]::placeholder,
+.footer-form input[type="mail"]::placeholder{
+    color: #fff;
 }
 .footer-form input[type="mail"]{
     width: 100%;
@@ -1816,9 +1820,9 @@
     color: #FF6138;
 }
 .search-form-box{
-    width: 100%;
-    padding-left: 50px;
+    max-width: 1000px;
     margin-top: 50px;
+    margin: 0 auto;
 }
 .search-form-box form{
     width: 100%;
