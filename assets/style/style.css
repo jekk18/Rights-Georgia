@@ -336,7 +336,7 @@
     width: 360px;
     height: 150px;
     right: 0;
-    position: absolute;
+    /* position: absolute; */
  }
  .remove-img{
     display: none;
@@ -1454,6 +1454,7 @@
 .publication-item:hover .public-img img{
     transform: scale(1.09);
 }
+
 /* Publications */
 /* Questions */
 
