@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 
-:root{
+/* :root{
     --logo-text-font: 22px;
     --nav-links-font: 18px;
     --lang-font: 18px;
@@ -22,7 +22,7 @@
     --create-font: 16px;
     --brc-font: 16px;
     --submenu-a-font: 16px;
-}
+} */
 .padding{
     padding: var(--padding);
 }
