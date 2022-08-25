@@ -336,7 +336,7 @@
     width: 360px;
     height: 150px;
     right: 0;
-    /* position: absolute; */
+    position: absolute;
  }
  .remove-img{
     display: none;

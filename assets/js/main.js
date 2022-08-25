@@ -64,18 +64,7 @@ $('.nav-li').hover(function(){
    }
 });
 
-// $('.nav-li').hover(function(){
-//   var SubLi =  $(this).children('.sub-menu-1').children('.sub-container').children('.sub-li').length;
-     
-//    for(var i=0; i<SubLi; i++){
-//     var len = $(this).children('.sub-menu-1').children('.sub-container').children('.sub-li');
-     
-//      if($(len[i]).children('.child-sub-menu-1').children().length > 0){
-//       $(len[i]).toggleClass('hover-active');
-//         return false;
-//      } 
-//    }
-// });
+ 
 
 $(document).ready(function(){
   var SubLi =  $('.nav-li').children('.sub-menu-1').children('.sub-container').children('.sub-li').length;
@@ -93,7 +82,7 @@ $(document).ready(function(){
  
 $(document).ready(function(){
   if($('.hover-active2').children('.grandson-sub-menu-1').children('.grandson-li').length > 0){
-    console.log('ss')
+ 
     $('.hover-active2').children('.grandson-sub-menu-1').children('.img-rp').addClass('remove-img');
    }
    $('.hover-active2').children('.grandson-sub-menu-1').children('.grandson-li:first-child').addClass('hover-active3')
@@ -108,6 +97,12 @@ $('.sub-li').hover(function(){
 $('.child-sub-li').hover(function(){
   $(this).toggleClass('hover-active2');
   $(this).siblings().removeClass('hover-active2');
+  if($(this).children('.grandson-sub-menu-1').children('.grandson-li').length > 0){
+    $(this).children('.grandson-sub-menu-1').children('.img-rp').addClass('remove-img');;
+    console.log('remm')
+  }else{
+    $(this).children('.grandson-sub-menu-1').children('.img-rp').removeClass('remove-img');
+  }
 });
 
 $('.grandson-li').hover(function(){
