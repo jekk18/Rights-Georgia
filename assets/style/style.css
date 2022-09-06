@@ -166,7 +166,7 @@
     /* position: relative; */
     width: fit-content;
 }
-.link-col:first-child{
+.nav-li:first-child .link-col {
     padding-left: 60px;
 }
 .nav-links ul li:hover .link-col,
@@ -233,7 +233,7 @@
     padding-left: 59px;
  }
  .nav-li:first-child .sub-li:nth-child(3n-2){
-    padding-left: 49px;
+    padding-left: 59px;
  }
  .sub-a, .child-sub-a, .grandson-a{
     font-size: var(--submenu-a-font);
@@ -538,7 +538,7 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    padding: 0 180px;
+    padding: 0 150px;
 }
 .banner-2 .text-box h2{
     font-size: 26px;
@@ -620,6 +620,9 @@
 .news-section{
     width: 100%;
     background: rgba(246, 246, 246, 0.5);
+}
+.hide-link2{
+    display: none;
 }
 
 .news-title{
@@ -1998,16 +2001,14 @@ html:lang(ka) .footer-contact h2,
 html:lang(ka) .footer-links h2,
 html:lang(ka) .footer-form h2,
 html:lang(ka) .about-left-box h1,
-html:lang(ka) .c-bot span, 
-html:lang(ka) .c-bot a,
 html:lang(ka) .important-title h1,
 html:lang(ka) .brc-link a,
 html:lang(ka) .publication-item h3,
 html:lang(ka) .question a,
 html:lang(ka) .accord-box h2,
 html:lang(ka) .search-result-item h1,
-html:lang(ka) .top-links-box a,
 html:lang(ka) .sub-item h2,
+html:lang(ka) .news-left-info .text,
 html:lang(ka) .link-text-03 h2{
     
     font-feature-settings: "case" on;
