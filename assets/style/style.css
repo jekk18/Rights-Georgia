@@ -621,7 +621,7 @@
     width: 100%;
     background: rgba(246, 246, 246, 0.5);
 }
-.hide-link2{
+.hide-link2,.hide-link3{
     display: none;
 }
 
@@ -991,7 +991,18 @@
     flex-direction: column;
     margin-top: 46px;
 }
-.about-left-box h1{
+.about-left-box h1 {
+    font-size: var(--section-title);
+    line-height: 32px;
+    color: #232962;
+    margin-bottom: 15px;
+    font-family: 'FiraGO';
+    font-weight: bold;
+}
+.hide-h1-about{
+    display: none;
+}
+.hide-h1-about h1{
     font-size: var(--section-title);
     line-height: 32px;
     color: #232962;
@@ -1042,7 +1053,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 0 30px;
 }
 .about-img-item{
     width: calc((100% / 6) - 25px);
@@ -2009,7 +2020,8 @@ html:lang(ka) .accord-box h2,
 html:lang(ka) .search-result-item h1,
 html:lang(ka) .sub-item h2,
 html:lang(ka) .news-left-info .text,
-html:lang(ka) .link-text-03 h2{
+html:lang(ka) .link-text-03 h2,
+html:lang(ka) .hide-h1-about h1{
     
     font-feature-settings: "case" on;
 }
