@@ -1640,6 +1640,7 @@
     transition: 0.3s;
 }
 .link-text-03 .text{
+    font-size: 18px;
     color: #878787;
     font-family: 'FiraGO';;
     line-height: 28px;
@@ -2021,7 +2022,8 @@ html:lang(ka) .search-result-item h1,
 html:lang(ka) .sub-item h2,
 html:lang(ka) .news-left-info .text,
 html:lang(ka) .link-text-03 h2,
-html:lang(ka) .hide-h1-about h1{
+html:lang(ka) .hide-h1-about h1,
+html:lang(ka) .brc-link span{
     
     font-feature-settings: "case" on;
 }
