@@ -1084,6 +1084,10 @@
     padding-left: 20px;
     /* max-height: 1000px;
     overflow-y: auto; */
+    position: relative;
+}
+.resp-active-arrow{
+    display: none;
 }
 .accord-box{
     width: 100%;
@@ -1675,6 +1679,8 @@
 }
 .det-video-item-p a{
     display: block;
+    width: 100%;
+    height: 100%;
 }
 .det-video-item-p img{
     width: 100%;
@@ -1691,6 +1697,9 @@
 .det-video-item-p:hover span svg path{
     fill: red;
 }   
+.text-hidden{
+    display: none;
+}
 /* Video  gallery */
 /* Contact */
 
@@ -1957,6 +1966,7 @@
 .det-right-accord{
     margin-top: 5px;
 }
+ 
 
 .input-lab-width2{
     width: 100%;
@@ -2050,4 +2060,11 @@ html:lang(ka) .link-col{
     font-size: 20px;
     font-weight: bold;
     font-family: 'FiraGO';
+}
+
+.burger-menu{
+    display: none;
+}
+.burger-lines{
+    display: none;
 }
