@@ -13,7 +13,11 @@ $('.banner-slider').slick({
   });
 
   $('.top-links-box span').click(function(){
-    $(this).parents('.accord-box ul li').toggleClass('active-accord').siblings().removeClass('active-accord');
+    $(this).parents('.accord-box ul li.li-01').toggleClass('active-accord').siblings().removeClass('active-accord');
+    
+  });
+  $('.svvg').click(function(){
+    $(this).parents('.sp-001').toggleClass('active-accord-2').siblings().removeClass('active-accord-2');
     
   });
   // $('.service-column-box').click(function(){

@@ -1133,7 +1133,7 @@
     position: relative;
     z-index: 5;
 }
-.accord-box ul li{
+.accord-box ul li.li-01{
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -1169,9 +1169,41 @@
     font-family: 'FiraGO';;
     position: relative;
     transition: 0.3s;
-    padding: 10px 0;
+    /* padding: 10px 0; */
 }
- 
+ .sp-001{
+    padding: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+ }
+ .child-link-sp-box{
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    padding-left: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+ }
+ .sp-child-link{
+    padding: 5px 0;
+ }
+ .active-accord-2  .child-link-sp-box{
+    max-height: 300px;
+    margin-top: 10px;
+ }
+ .svvg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    cursor: pointer;
+    transition: 0.1s;
+ }
+ .active-accord-2 .svvg{
+    transform: rotate(90deg);
+ }
 .hidden-links-box::after{
     position: absolute;
     content: "";
@@ -1201,6 +1233,10 @@
 .hidden-links-box a:hover::before,
 .hidden-links-box a.active-dot::before{
     opacity: 1;
+}
+.hidden-links-box .child-link-sp-box a:hover::before,
+.hidden-links-box .child-link-sp-box a.active-dot::before{
+    opacity: 0;
 }
 .share-icons{
     display: flex;
@@ -1234,7 +1270,7 @@
     background-color:#0072b1;
 }
 .active-accord .hidden-links-box{
-    max-height: 300px;
+    max-height: 500px;
 }
 .active-accord .top-links-box a{
     margin-bottom: 22px;
