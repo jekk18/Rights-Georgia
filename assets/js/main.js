@@ -16,6 +16,10 @@ $('.banner-slider').slick({
     $(this).parents('.accord-box ul li').toggleClass('active-accord').siblings().removeClass('active-accord');
     
   });
+  // $('.service-column-box').click(function(){
+  //   $(this).parents('.accord-box ul li').toggleClass('active-accord').siblings().removeClass('active-accord');
+    
+  // });
 
   $('.question .quest-t span').click(function(){
     $(this).parents('.question-item ol li').toggleClass('show-result').siblings().removeClass('show-result');
