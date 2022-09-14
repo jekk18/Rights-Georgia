@@ -2041,7 +2041,8 @@ html:lang(ka) .sub-item h2,
 html:lang(ka) .news-left-info .text,
 html:lang(ka) .link-text-03 h2,
 html:lang(ka) .hide-h1-about h1,
-html:lang(ka) .brc-link span{
+html:lang(ka) .brc-link span,
+html:lang(ka) .t-li-a-01{
     
     font-feature-settings: "case" on;
 }
