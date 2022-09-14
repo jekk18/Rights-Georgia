@@ -59,6 +59,7 @@ $('.nav-li').hover(function(){
      }else{
       console.log('false');
      }
+     
     //  if($(len[i]).children('.child-sub-menu-1').children('.child-sub-li').children('.grandson-sub-menu-1').children('.grandson-li').length > 0){
     //   $(len[i]).children('.child-sub-menu-1').children('.child-sub-li').children('.grandson-sub-menu-1').children('.img-rp').addClass('remove-img');
     //  }
