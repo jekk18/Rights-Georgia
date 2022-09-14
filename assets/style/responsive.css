@@ -723,6 +723,9 @@
         width: 280px;
      }
     /* Video-gallery det */
+    .input-lab-box {
+        width: 100%;
+    }
 }
 
 @media (max-width: 767px){
@@ -886,6 +889,7 @@
         width: 243px;
      }
     /* Video-gal det */
+     
 }
 @media (max-width: 575px){
     :root {
